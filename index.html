@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zyklus Analyse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>Zyklus Analyse</h1>
+
+<label>Blutung heute:</label>
+<select id="blutung">
+  <option value="0">gar nicht</option>
+  <option value="1">wenig</option>
+  <option value="2">mittel</option>
+  <option value="3">stark</option>
+</select>
+
+<button onclick="berechnen()">Analyse starten</button>
+
+<p id="phase"></p>
+<p id="wahrscheinlichkeit"></p>
+
+<canvas id="chart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
